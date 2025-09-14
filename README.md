@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+# 🛒 Calculadora de Propina con React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación práctica de **calculadora de propinas**, desarrollada para reforzar conocimientos de **React con TypeScript**.  
+La app permite **seleccionar ítems de un menú**, añadirlos a un **carrito dinámico**, calcular el **total del consumo** y aplicar un **porcentaje de propina** antes de generar la orden.  
+Todo se maneja **de forma local** utilizando los principales hooks de React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características principales
+- 📦 **Menú dinámico**: los productos se muestran según su stock disponible.  
+- 🛍️ **Carrito interactivo**: actualización en tiempo real de cantidades y totales.  
+- 💸 **Cálculo de propina**: selección de diferentes porcentajes para ajustar el monto final.  
+- ⚡ **Rendimiento optimizado** con `useMemo` para cálculos derivados.  
+- 🎯 **Gestión de estado avanzada** con `useReducer` para el carrito de compras.  
+- 🎨 **Interfaz responsive** construida con **TailwindCSS**.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Hooks de React aplicados:**
+- `useState` → Manejo de estados locales (inputs, selección de propina, etc).  
+- `useReducer` → Lógica del carrito de compras (añadir, quitar, actualizar cantidades).  
+- `useMemo` → Optimización en cálculos de totales y propinas.  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📂 Estructura del proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+├─ components/ # Componentes reutilizables (MenuItem, OrderContent, OrderTotal, TipPercentageForm.)
+├─ reducer/ # Lógica del carrito con useReducer
+├─ data/ # Data local (menú, productos, etc.)
+└─ App.jsx # Punto de entrada principal
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Setup del proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clonar el repositorio:
+   ```
+   git clone https://github.com/thonyrm/e-comerce.git
+   ```
+2. Instalar dependencias:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    ```
+    npm install
+    ```
+
+3. Ejecutar en modo desarrollo:
+    ```
+    npm run dev
+    ```
+
+## 🌐 Demo en línea
+Puedes probar el proyecto funcionando aquí:  
+👉 [Tienda E-commerce en Netlify](https://cd-ecomerce-88010.netlify.app/)
