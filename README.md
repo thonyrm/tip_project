@@ -36,7 +36,7 @@ Todo se maneja **de forma local** utilizando los principales hooks de React.
 
 1. Clonar el repositorio:
    ```
-   git clone https://github.com/thonyrm/e-comerce.git
+   git clone https://github.com/thonyrm/tip_project.git
    ```
 2. Instalar dependencias:
 
@@ -51,4 +51,4 @@ Todo se maneja **de forma local** utilizando los principales hooks de React.
 
 ## 🌐 Demo en línea
 Puedes probar el proyecto funcionando aquí:  
-👉 [Tienda E-commerce en Netlify](https://cd-ecomerce-88010.netlify.app/)
+👉 [Calculadora de propinas en Vercel](https://tip-project-xi.vercel.app/)
