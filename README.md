@@ -31,6 +31,14 @@ Todo se maneja **de forma local** utilizando los principales hooks de React.
 ├─ data/ # Data local (menú, productos, etc.)
 └─ App.jsx # Punto de entrada principal
 ```
+---
+
+## 🛠️ Tecnologías utilizadas
+- [Vite](https://vitejs.dev/) — entorno de desarrollo rápido.
+- [React](https://react.dev/) — librería principal.
+- [React-Toastify](https://fkhadra.github.io/react-toastify/) — notificaciones.
+
+---
 
 ## 🔧 Setup del proyecto
 
@@ -48,6 +56,8 @@ Todo se maneja **de forma local** utilizando los principales hooks de React.
     ```
     npm run dev
     ```
+
+---
 
 ## 🌐 Demo en línea
 Puedes probar el proyecto funcionando aquí:  
