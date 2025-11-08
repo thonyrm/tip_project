@@ -14,7 +14,6 @@ export type OrderState = {
 export const initialState : OrderState= {
     order : [],
     tip : 0
-
 }
 
 export const OrderReducer = (
@@ -36,7 +35,6 @@ export const OrderReducer = (
         return{
             ...state,
             order
-
         }
     }
     if(action.type === 'remove-item'){
@@ -44,7 +42,6 @@ export const OrderReducer = (
         return{
             ...state,
             order : updatedOrder
-            
         }
     }
     if(action.type === 'place-order'){
@@ -52,7 +49,6 @@ export const OrderReducer = (
             ...state,
             order: [],
             tip: 0
-            
         }
     }
     if(action.type === 'add-tip'){
@@ -60,7 +56,6 @@ export const OrderReducer = (
         return{
             ...state,
             tip
-            
         }
     }
 
