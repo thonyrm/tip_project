@@ -1,7 +1,6 @@
 import type { Dispatch } from "react"
 import type { OrderActions } from "../Reducer/Order-reducer"
 
-
 const tipOptions = [
     {
         id: 'tip-10',
@@ -47,10 +46,7 @@ export default function TipPercentageForm({dispatch , tip}: TipPercentageFormPro
                         </div>
                     ))
                 }
-
             </form>
-
-        
         </div>
     )
 }
