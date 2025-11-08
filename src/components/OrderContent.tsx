@@ -30,15 +30,10 @@ export default function OrderContent({order , dispatch}: OrderContentProp) {
                             >
                                 X
                             </button>
-
-
                         </div>
-
                     ))
                 }
-
             </div>
-        
         </div>
     )
 }
