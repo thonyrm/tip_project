@@ -57,7 +57,5 @@ export const OrderReducer = (
             ...state,
             tip
         }
-    }
-
     return state
 }
