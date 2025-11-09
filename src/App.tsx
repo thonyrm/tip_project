@@ -28,11 +28,9 @@ function App() {
                 />
               ))
             }
-          
           </div>
         </div>
         <div className=" border border-dashed border-slate-300 rounded-lg space-y-10 p-5">
-          
           {
             state.order.length ?
             (
@@ -49,13 +47,11 @@ function App() {
                   order= {state.order}
                   tip = {state.tip}
                   dispatch = {dispatch}
-
                 />
               </>
             ): 
             <p className="text-center">La orden está vacia</p>
           }
-          
         </div>
       </main>
     </>
