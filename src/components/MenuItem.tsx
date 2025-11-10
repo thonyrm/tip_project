@@ -7,6 +7,7 @@ type MenuItemProps = {
     item: MenuItem,
     dispatch: Dispatch<OrderActions>
 }
+
 export default function MenuItem({item, dispatch} : MenuItemProps) {
     return (
         <button className="border-2 border-sky-700 rounded-lg p-3 text-lg cursor-pointer w-full hover:bg-sky-200 flex justify-between"
